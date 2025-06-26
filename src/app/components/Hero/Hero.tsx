@@ -57,8 +57,9 @@ export default function HeroSection() {
       <main className="flex flex-col md:flex-row items-center gap-12 max-w-6xl z-10 mt-8">
         <div className="flex-1 text-left">
           <h1 className="text-5xl font-extrabold text-black mb-6 leading-tight uppercase">
-            Making life<br />easier<br />through<br />code.
+            Olá meu nome é:
           </h1>
+          <h2 className="text-4xl mb-8">Anderson De Jesus</h2>
           <p className="text-gray-600 mb-8 max-w-lg leading-relaxed">
             More than just facilitating tasks, my goal is to create change by developing technological solutions that combine innovation, accessibility, and direct impact on people's daily lives. I don't just program to solve problems, but to reinvent possibilities.
           </p>
