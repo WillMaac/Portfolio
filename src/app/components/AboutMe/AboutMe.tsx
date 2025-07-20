@@ -1,8 +1,10 @@
+import { Card } from "../Card/Card";
+
 export default function AboutMe(){
     return(
-        <section className=" bg-gray-50 flex flex-col items-center justify-center px-4 relative overflow-hidden h-[900px]">
-            <h2 className="text-3xl  mb-50">Sobre mim</h2>
-            <p className="text-2xl mb-10 w-[950px]">Olá, sou Anderson De Jesus, desenvolvedor front-end apaixonado por
+        <section className=" bg-gray-50 flex flex-col items-center justify-center px-4 relative overflow-hidden h-[1040px]">
+            <h2 className="text-3xl  mb-20">Sobre mim</h2>
+            <p className="text-2xl w-[950px]">Olá, sou Anderson De Jesus, desenvolvedor front-end apaixonado por
           transformar ideias em interfaces modernas, funcionais e centradas no
           usuário. Sou estudante de Análise e Desenvolvimento de Sistemas, e
           atualmente atuo como desenvolvedor front-end com foco em tecnologias
@@ -22,6 +24,25 @@ export default function AboutMe(){
           projetos e conhecer de perto o meu trabalho. Se procura um
           profissional proativo, resiliente e em constante evolução, estou
           pronto para contribuir com a sua equipa ou dar vida ao seu projeto.</p>
+          <div>
+            <div className="flex gap-5 mt-10">
+            <Card
+            titulo="Currículo"
+            descricao="Apresento meus conhecimentos adquiridos, formações e experiências práticas."
+            btn="Baixar CV"
+            />
+    <Card
+    titulo="Certificados"
+    descricao="Certificados de plataformas como Alura, FIAP, Udemy, etc."
+    btn="Ver Certificados"
+    />
+    <Card
+    titulo="Experiência"
+    descricao="Experiência prática com empresas reais e soluções tecnológicas."
+    btn="Ver Experiências"
+    />
+    </div>
+          </div>
         </section>
     )
 }
