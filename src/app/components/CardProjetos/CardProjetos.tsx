@@ -1,29 +1,120 @@
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
+/**
+ * Define as propriedades (props) que o componente CardProjetos pode receber.
+ * O '?' após o nome da propriedade indica que ela é opcional.
+ * Isso resolve os erros de build ao usar o componente sem todos os links.
+ */
 type Props = {
   titulo: string;
-  descricao?: string
+  descricao?: string;
   btn: string;
   btn2: string;
-  image: StaticImageData
+  image: StaticImageData | string;
+  className?: string;
+  isLarge?: boolean;
+  link1?: string;
+  link2?: string;
+  linkPrincipal?: string;
 };
 
-export const CardProjetos: React.FC<Props> = ({ titulo, descricao, btn, btn2, image})=>{
-    return(
-        <article className='flex flex-col justify-center items-center border-2 h-[25em] rounded-xl shadow-md px-25 py-3 hover:bg-green-500 transition duration-300 hover:scale-105 bg-white'>
-            <h2>{titulo}</h2>
-<Image
+/**
+ * Função auxiliar para verificar se um link é externo (começa com 'http' ou 'https').
+ * A função lida com o caso em que 'href' é undefined, evitando o TypeError.
+ */
+const isExternal = (href: string | undefined) => {
+  if (href) {
+    return href.startsWith('http') || href.startsWith('https');
+  }
+  return false;
+};
+
+export const CardProjetos: React.FC<Props> = ({
+  titulo,
+  descricao,
+  btn,
+  btn2,
+  image,
+  className = "",
+  isLarge = false,
+  link1,
+  link2,
+  linkPrincipal,
+}) => {
+  // O conteúdo principal do card é extraído para uma variável para evitar duplicação.
+  const cardContent = (
+    <article
+      className={`rounded-xl shadow-2xl bg-white hover:scale-105 transition duration-300 flex flex-col cursor-pointer ${
+        isLarge ? "h-[620px]" : "h-[190px]"
+      } overflow-hidden ${className}`}
+    >
+      <Image
         src={image}
-        alt=""
-        width={800}
-        height={800}
-        className="rounded mb-2"
+        alt={titulo}
+        width={600}
+        height={isLarge ? 300 : 150}
+        className={`w-full ${isLarge ? "h-[300px]" : "h-[150px]"} object-cover`}
       />
-            <p>{descricao}</p>
-            <div className='flex gap-60 mt-30'>
-            <button className='border-2 bg-blue-500 rounded-[8px] px-2 py-1 cursor-pointer'>{btn}</button>
-            <button className='border-2 bg-blue-500 rounded-[8px] px-2 py-1 cursor-pointer'>{btn2}</button>
-            </div>
-        </article>
-    )
-}
+      <div className="flex flex-col justify-center items-center p-4 flex-1">
+        <h3 className="text-xl font-semibold mb-2 text-center">{titulo}</h3>
+        {descricao && <p className="text-sm text-gray-600 text-center">{descricao}</p>}
+        <div className="flex gap-4 mt-4">
+          {/* BOTÃO 1 - Renderiza apenas se 'link1' for fornecido */}
+          {link1 && (
+            isExternal(link1) ? (
+              <a 
+                href={link1}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {btn}
+              </a>
+            ) : (
+              <Link href={link1} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400">
+                {btn}
+              </Link>
+            )
+          )}
+
+          {/* BOTÃO 2 - Renderiza apenas se 'link2' for fornecido */}
+          {link2 && (
+            isExternal(link2) ? (
+              <a 
+                href={link2}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {btn2}
+              </a>
+            ) : (
+              <Link href={link2} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400">
+                {btn2}
+              </Link>
+            )
+          )}
+        </div>
+      </div>
+    </article>
+  );
+
+  return (
+    <>
+      {/* Se 'linkPrincipal' for fornecido, ele envolve todo o card em um link. */}
+      {linkPrincipal ? (
+        isExternal(linkPrincipal) ? (
+          <a href={linkPrincipal} target="_blank" rel="noopener noreferrer">
+            {cardContent}
+          </a>
+        ) : (
+          <Link href={linkPrincipal}>{cardContent}</Link>
+        )
+      ) : (
+        // Se 'linkPrincipal' não for fornecido, apenas o conteúdo do card é renderizado.
+        <>{cardContent}</>
+      )}
+    </>
+  );
+};

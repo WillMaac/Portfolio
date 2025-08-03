@@ -11,7 +11,7 @@ export default function Projects() {
       <h2 className="text-3xl text-white mb-20">Projetos</h2>
 
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-center w-full max-w-7xl">
-        {/* CARD MAIOR À ESQUERDA */}
+        {/* CARD MAIOR À ESQUERDA - isLarge é true, com links nos botões */}
         <div className="flex-1">
           <CardProjetos
             titulo="Arquitetura"
@@ -26,24 +26,35 @@ export default function Projects() {
 
         {/* COLUNA DE CARDS MENORES À DIREITA */}
         <div className="flex flex-col gap-6 w-full lg:w-[400px]">
+          {/* Card com botões sem linkPrincipal */}
           <CardProjetos
             titulo="Spider-man"
             image={Projeto2}
             btn="Código"
             btn2="Preview"
+            link1="https://github.com/WillMaac/Landing-page-do-Spider-Man"
+            link2="https://landing-page-do-spider-man-zeta.vercel.app/"
           />
+
+          {/* Card com linkPrincipal (clicável por inteiro) */}
           <CardProjetos
             titulo="Clínica Odontológica"
             image="/t.png"
             btn="Código"
             btn2="Preview"
             linkPrincipal="https://cl-nica-odontol-gica-h22i.vercel.app/"
+            link1="https://github.com/WillMaac/clinica-odontologica"
+            link2="https://cl-nica-odontol-gica-h22i.vercel.app/"
           />
+
+          {/* Card com botões sem linkPrincipal */}
           <CardProjetos
-            titulo="Landing Page Azul"
+            titulo="Landing Page"
             image={Projeto2}
             btn="Código"
             btn2="Preview"
+            link1="https://github.com/WillMaac/landing-page-blue"
+            link2="https://landing-page-blue-gamma.vercel.app/"
           />
         </div>
       </div>

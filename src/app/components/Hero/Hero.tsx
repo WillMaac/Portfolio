@@ -1,35 +1,31 @@
-// pages/HeroSection.js (ou o caminho onde seu componente está)
-
 import React from "react";
 import Image from "next/image";
 import Foto from "../../img/avatar.png";
 import { Check } from "lucide-react";
-import "../Hero/styles/animations.css"
-
-// Importe o componente AnimatedBackground
+import "../Hero/styles/animations.css";
 import { AnimatedBackground } from "../AnimatedBackground";
 
 export default function HeroSection() {
   return (
-    // O container principal não precisa de 'relative' para o header,
-    // mas o 'overflow-hidden' ainda é útil.
-    <div className="min-h-screen bg-[#000] flex flex-col items-center justify-center px-4 relative overflow-hidden">
+    <div className="min-h-screen bg-[#000] flex flex-col items-center justify-center px-4 relative overflow-hidden" >
       
       {/* Header com o background animado */}
       <header className="w-full flex justify-between items-center py-6 max-w-6xl z-10 relative">
-        {/* Container para o background animado dentro do header */}
         <div className="absolute top-0 left-0 w-full h-full z-0">
           <AnimatedBackground />
         </div>
 
-        {/* Conteúdo do header */}
         <div className="flex items-center gap-4 z-10">
           <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center font-bold text-white shadow-md">
             <span className="text-xl">AJ</span>
           </div>
           <nav className="flex gap-9 text-gray-700 bg-white rounded-xl px-6 py-2 shadow-md w-[450px] h-[60px] justify-center items-center">
             <a href="#inicio" className="flex items-center gap-2 font-medium">
-              <span className="text-orange-400"><svg width="16" height="16"><circle cx="8" cy="8" r="6" fill="#35e013"/></svg></span>
+              <span className="text-orange-400">
+                <svg width="16" height="16">
+                  <circle cx="8" cy="8" r="6" fill="#35e013" />
+                </svg>
+              </span>
               Home
             </a>
             <a href="#sobre" className="hover:text-[#03C950]">About</a>
@@ -66,13 +62,13 @@ export default function HeroSection() {
             alt="Avatar"
             width={300}
             height={300}
-            className="rounded-full  relative animate-float-manual bg-[#6ef539]"
+            className="rounded-full relative animate-float-manual bg-[#6ef539]"
           />
         </div>
       </main>
 
-      {/* Card de serviços */}
-      <section className="mt-16 bg-white rounded-2xl shadow-lg p-8 w-full max-w-3xl flex flex-col md:flex-row gap-8 z-10">
+      {/* Card de serviços sobreposto */}
+      <section className="absolute bottom-[-200px] left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-lg p-8 w-full max-w-3xl flex flex-col md:flex-row gap-8 z-20">
         <ul className="flex-1 space-y-4">
           <li className="flex items-center gap-2 text-green-500 font-medium">
             <Check size={18} /> Layout to Code Conversion
@@ -99,7 +95,10 @@ export default function HeroSection() {
             Entrego interfaces modernas, eficientes e pensadas na melhor experiência para o usuário, com atenção aos detalhes, desempenho e qualidade no código.
           </p>
           <a href="#projetos" className="text-green-500 font-semibold hover:underline flex items-center gap-1">
-            Veja meus projetos <svg width="16" height="16" fill="none"><path d="M4 8h8M8 4l4 4-4 4" stroke="#2659ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            Veja meus projetos{" "}
+            <svg width="16" height="16" fill="none">
+              <path d="M4 8h8M8 4l4 4-4 4" stroke="#2659ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </a>
         </div>
       </section>
