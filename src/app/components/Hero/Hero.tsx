@@ -1,9 +1,9 @@
-"use client"; // Adiciona a diretiva para que o componente seja renderizado no lado do cliente.
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
 import Foto from "../../img/avatar.png";
-import { Menu, X } from "lucide-react"; // Removido o 'Check' que não era usado.
+import { Menu, X } from "lucide-react";
 import "../Hero/styles/animations.css";
 import { AnimatedBackground } from "../AnimatedBackground";
 
@@ -18,7 +18,7 @@ export default function HeroSection() {
           <AnimatedBackground />
         </div>
 
-        <div className="flex items-center justify-between z-10 relative">
+        <div className="flex items-center gap-10 z-10 relative mb-20">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center font-bold text-white shadow-md">
               <span className="text-xl">AJ</span>
@@ -37,7 +37,7 @@ export default function HeroSection() {
           <nav
             className={`${
               menuOpen ? "flex" : "hidden"
-            } lg:flex flex-col lg:flex-row gap-4 lg:gap-9 text-gray-700 bg-white rounded-xl px-6 py-4 lg:py-2 shadow-md lg:w-[450px] lg:h-[60px] justify-center items-center absolute lg:static top-full right-0 mt-2 lg:mt-0`}
+            } lg:flex flex-col lg:flex-row gap-4 lg:gap-9 text-gray-700 bg-white rounded-xl px-6 py-4 lg:py-2 shadow-2xl lg:w-[450px] lg:h-[60px] justify-center items-center absolute lg:static top-full right-0 mt-2 lg:mt-0`}
           >
             <a href="#inicio" className="flex items-center gap-2 font-medium">
               <span className="text-orange-400">
@@ -45,12 +45,12 @@ export default function HeroSection() {
                   <circle cx="8" cy="8" r="6" fill="#35e013" />
                 </svg>
               </span>
-              Home
+              Ínicio
             </a>
-            <a href="#sobre" className="hover:text-[#03C950]">About</a>
+            <a href="#sobre" className="hover:text-[#03C950]">Sobre</a>
             <a href="#stacks" className="hover:text-[#03C950]">Stacks</a>
-            <a href="#projetos" className="hover:text-[#03C950]">Projects</a>
-            <a href="#projetos" className="hover:text-[#03C950]">Contact</a>
+            <a href="#projetos" className="hover:text-[#03C950]">Projetos</a>
+            <a href="#contatos" className="hover:text-[#03C950]">Contatos</a>
           </nav>
         </div>
       </header>

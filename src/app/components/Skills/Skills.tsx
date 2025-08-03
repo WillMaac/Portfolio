@@ -14,7 +14,7 @@ const baseIconClass = "text-4xl sm:text-5xl";
 
 function Skills() {
   return (
-    <section className="bg-[#F9FAFB] p-7">
+    <section className="bg-[#F9FAFB] p-7" id="stacks">
       <h2 className="mb-6 text-3xl text-black text-center font-roboto">
         Tecnologias que eu trabalho e domino
       </h2>

@@ -2,7 +2,7 @@ import { Card } from "../Card/Card";
 
 export default function AboutMe() {
   return (
-    <section className="bg-gray-50 flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
+    <section className="bg-gray-50 flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden" id="sobre">
       <h2 className="text-3xl mb-20">Sobre mim</h2>
       <p className="text-xl md:text-2xl max-w-4xl text-center leading-relaxed mb-10">
         Olá, sou Anderson De Jesus, desenvolvedor front-end apaixonado por
