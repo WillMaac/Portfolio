@@ -1,5 +1,4 @@
 import Projeto1 from "../../img/Imagens Projetos/Arquitetura.png";
-import Download from "/public/t.png";
 import Projeto2 from "../../img/Imagens Projetos/Landing page do Spider-Man.png";
 import { CardProjetos } from "../CardProjetos/CardProjetos";
 
@@ -35,7 +34,7 @@ export default function Projects() {
           />
           <CardProjetos
             titulo="Clínica Odontológica"
-            image={Download}
+            image="/t.png"
             btn="Código"
             btn2="Preview"
             linkPrincipal="https://cl-nica-odontol-gica-h22i.vercel.app/"
