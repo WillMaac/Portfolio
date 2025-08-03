@@ -1,11 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-/**
- * Define as propriedades (props) que o componente CardProjetos pode receber.
- * O '?' após o nome da propriedade indica que ela é opcional.
- * Isso resolve os erros de build ao usar o componente sem todos os links.
- */
 type Props = {
   titulo: string;
   descricao?: string;
@@ -18,11 +13,6 @@ type Props = {
   link2?: string;
   linkPrincipal?: string;
 };
-
-/**
- * Função auxiliar para verificar se um link é externo (começa com 'http' ou 'https').
- * A função lida com o caso em que 'href' é undefined, evitando o TypeError.
- */
 const isExternal = (href: string | undefined) => {
   if (href) {
     return href.startsWith('http') || href.startsWith('https');
@@ -42,11 +32,10 @@ export const CardProjetos: React.FC<Props> = ({
   link2,
   linkPrincipal,
 }) => {
-  // O conteúdo principal do card é extraído para uma variável para evitar duplicação.
   const cardContent = (
     <article
       className={`rounded-xl shadow-2xl bg-white hover:scale-105 transition duration-300 flex flex-col cursor-pointer ${
-        isLarge ? "h-[620px]" : "h-[190px]"
+        isLarge ? "h-[620px] max-w-[1500px]" : "h-[190px]"
       } overflow-hidden ${className}`}
     >
       <Image
@@ -112,7 +101,7 @@ export const CardProjetos: React.FC<Props> = ({
           <Link href={linkPrincipal}>{cardContent}</Link>
         )
       ) : (
-        // Se 'linkPrincipal' não for fornecido, apenas o conteúdo do card é renderizado.
+    
         <>{cardContent}</>
       )}
     </>
