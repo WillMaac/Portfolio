@@ -1,5 +1,5 @@
 "use client";
-
+// app/layout.tsx
 import React, { useState } from "react";
 import Image from "next/image";
 import Foto from "../../img/avatar.png";
@@ -45,7 +45,7 @@ export default function HeroSection() {
                   <circle cx="8" cy="8" r="6" fill="#35e013" />
                 </svg>
               </span>
-              Ínicio
+              Início
             </a>
             <a href="#sobre" className="hover:text-[#03C950]">Sobre</a>
             <a href="#stacks" className="hover:text-[#03C950]">Stacks</a>
@@ -58,18 +58,18 @@ export default function HeroSection() {
       {/* Main */}
       <main className="flex flex-col-reverse lg:flex-row items-center gap-12 max-w-6xl z-10 mt-8 w-full">
         <div className="flex-1 text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight uppercase">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight uppercase font-inter lg:text-left text-center">
             Olá meu nome é:
           </h1>
-          <h2 className="text-3xl md:text-4xl mb-6 text-white">Anderson De Jesus</h2>
-          <p className="text-[#ffffff] mb-8 max-w-lg leading-relaxed">
+          <h2 className="text-3xl md:text-4xl mb-6 text-white font-poppins lg:text-left text-center">Anderson De Jesus</h2>
+          <p className="text-[#ffffff] mb-8 max-w-lg leading-relaxed font-poppins text-xl ">
             Mais do que facilitar tarefas, meu objetivo é provocar mudanças criando soluções tecnológicas que unem inovação, acessibilidade e impacto direto no dia a dia das pessoas. Não programo só para resolver problemas, mas para reinventar possibilidades
           </p>
-          <div className="flex gap-5  flex-wrap justify-center lg:justify-start">
-            <button className="bg-green-400 hover:bg-orange-500 text-white px-6 py-2 rounded-full shadow-md font-semibold transition">
+          <div className="flex gap-30  flex-wrap justify-center lg:justify-start lg:gap-[100px]">
+            <button className="bg-green-400 hover:bg-orange-500 text-white px-6 py-2 rounded-full  font-semibold transition border-none">
               Ver mais
             </button>
-            <button className="border border-gray-200 px-6 py-2 rounded-full shadow-md bg-white hover:bg-orange-500 font-semibold transition">
+            <button className="border border-gray-200 px-6 py-2 rounded-full  bg-white hover:bg-orange-500 font-semibold transition border-none">
               Contatos
             </button>
           </div>

@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <footer id="contatos" className="bg-gray-50 flex flex-col items-center justify-center px-4 py-16 relative overflow-hidden h-[800px]">
-      <h3 className="text-xl font-semibold mb-2">Contato</h3>
-      <h2 className="text-3xl font-bold mb-2">Gostou do meu trabalho?</h2>
-      <p className="mb-8 text-gray-600 text-center">
+      <h3 className="text-3xl font-semibold mb-2 font-inter">Contatos</h3>
+      <h2 className="text-3xl font-bold mb-2 font-inter">Gostou do meu trabalho?</h2>
+      <p className="mb-8 text-gray-600 text-center font-poppins text-2xl">
         Entre em contato ou acompanhe as minhas redes sociais!
       </p>
 

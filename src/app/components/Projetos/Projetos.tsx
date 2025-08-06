@@ -8,7 +8,7 @@ export default function Projects() {
       id="projetos"
       className="bg-[#000000e1] px-4 py-20 flex flex-col items-center"
     >
-      <h2 className="text-3xl text-white mb-20">Projetos</h2>
+      <h2 className="text-3xl text-white mb-20 font-inter">Projetos</h2>
 
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-center w-full max-w-7xl">
         {/* CARD MAIOR À ESQUERDA - isLarge é true, com links nos botões */}
@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
 
         {/* COLUNA DE CARDS MENORES À DIREITA */}
-        <div className="flex flex-col gap-6 w-full lg:w-[400px]">
+        <div className="flex flex-col gap-6 w-[350px] lg:w-[300px] mx-auto items-center">
           {/* Card com botões sem linkPrincipal */}
           <CardProjetos
             titulo="Spider-man"

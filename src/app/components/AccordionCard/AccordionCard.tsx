@@ -20,7 +20,7 @@ const AccordionCard: FC<AccordionCardProps> = ({ titulo, conteudo }) => {
         onClick={toggleAccordion}
         aria-expanded={isOpen}
       >
-        <span className="font-roboto">{titulo}</span>
+        <span className="font-poppins">{titulo}</span>
         <span className="text-xl">{isOpen ? "▲" : "▼"}</span>
       </button>
       {isOpen && (

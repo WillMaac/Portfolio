@@ -15,36 +15,36 @@ const baseIconClass = "text-4xl sm:text-5xl";
 function Skills() {
   return (
     <section className="bg-[#F9FAFB] p-7" id="stacks">
-      <h2 className="mb-6 text-3xl text-black text-center font-roboto">
+      <h2 className="mb-6 text-3xl text-black text-center font-roboto font-inter">
         Tecnologias que eu trabalho e domino
       </h2>
       <div>
         <div className="flex gap-6 items-center justify-center flex-wrap mb-10">
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl shadow-2xl border-none px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
           <FaHtml5 className={`${baseIconClass} text-[#E34F26]`} title="HTML5" />
           </div>
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl border-none">
           <FaCss3Alt className={`${baseIconClass} text-[#1572B6]`} title="CSS3" />
           </div>
 
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none ">
           <FaJsSquare className={`${baseIconClass} text-[#F7DF1E]`} title="JavaScript" />
           </div>
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
           <FaReact className={`${baseIconClass} text-[#61DAFB]`} title="React" />
           </div>
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
           <SiMongodb className={`${baseIconClass} text-[#47A248]`} title="MongoDB" />
           </div>
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-2xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none ">
           <FaGitAlt className={`${baseIconClass} text-[#F05032]`} title="Git" />
           </div>
-          <div className="border-2 rounded-xl shadow-md px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
+          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
           <FaGithub className={`${baseIconClass} text-[#181717]`} title="GitHub" />
           </div>
         </div>
 
-        <h2 className="m-8 text-3xl text-black text-center font-roboto">
+        <h2 className="m-8 text-3xl text-black text-center font-inter">
           Soft-Skills
         </h2>
 
@@ -63,7 +63,7 @@ function Skills() {
           />
           <AccordionCard
             titulo="Criatividade"
-            conteudo="Como desenvolvedor front-end, a criatividade é essencial — desde transformar ideias em interfaces cativantes até resolver desafios de usabilidade com soluções elegantes."
+            conteudo="Como desenvolvedor front-end, a criatividade é essencial, desde transformar ideias em interfaces cativantes até resolver desafios de usabilidade com soluções elegantes."
           />
           <AccordionCard
             titulo="Gestão de Tempo e Prioridades"
@@ -75,7 +75,7 @@ function Skills() {
           />
           <AccordionCard
             titulo="Paciência e Resiliência"
-            conteudo="Nem sempre tudo funciona de primeira. Saber lidar com bugs, falhas e dificuldades técnicas exige calma e perseverança — algo que desenvolvi em projetos pessoais e estudos."
+            conteudo="Nem sempre tudo funciona de primeira. Saber lidar com bugs, falhas e dificuldades técnicas exige calma e perseverança, algo que desenvolvi em projetos pessoais e estudos."
           />
         </div>
       </div>

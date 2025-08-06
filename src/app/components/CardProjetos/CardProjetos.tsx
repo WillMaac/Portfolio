@@ -34,8 +34,8 @@ export const CardProjetos: React.FC<Props> = ({
 }) => {
   const cardContent = (
     <article
-      className={`rounded-xl shadow-2xl bg-white hover:scale-105 transition duration-300 flex flex-col cursor-pointer ${
-        isLarge ? "h-[620px] max-w-[1500px]" : "h-[190px]"
+      className={`rounded-xl shadow-2xl bg-white items-center justify-center h-[100px]hover:scale-105 transition duration-300 flex flex-col cursor-pointer ${
+        isLarge ? "h-[520px] max-w-[400px] lg:max-w-[1500px]" : "h-[290px]"
       } overflow-hidden ${className}`}
     >
       <Image
@@ -43,7 +43,7 @@ export const CardProjetos: React.FC<Props> = ({
         alt={titulo}
         width={600}
         height={isLarge ? 300 : 150}
-        className={`w-full ${isLarge ? "h-[300px]" : "h-[150px]"} object-cover`}
+        className={`w-full ${isLarge ? "h-[300px]" : "h-[150px]"} rounded-xl`}
       />
       <div className="flex flex-col justify-center items-center p-4 flex-1">
         <h3 className="text-xl font-semibold mb-2 text-center">{titulo}</h3>
