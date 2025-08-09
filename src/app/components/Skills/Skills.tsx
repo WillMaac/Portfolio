@@ -1,4 +1,5 @@
-// components/Skills.tsx
+"use client";
+import React from "react";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -18,29 +19,35 @@ function Skills() {
       <h2 className="mb-6 text-3xl text-black text-center font-roboto font-inter">
         Tecnologias que eu trabalho e domino
       </h2>
+
       <div>
         <div className="flex gap-6 items-center justify-center flex-wrap mb-10">
-          <div className="border-2 rounded-xl shadow-2xl border-none px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center">
-          <FaHtml5 className={`${baseIconClass} text-[#E34F26]`} title="HTML5" />
-          </div>
-          <div className="border-2 rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl border-none">
-          <FaCss3Alt className={`${baseIconClass} text-[#1572B6]`} title="CSS3" />
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaHtml5 className={`${baseIconClass} text-[#E34F26]`} title="HTML5" aria-hidden />
           </div>
 
-          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none ">
-          <FaJsSquare className={`${baseIconClass} text-[#F7DF1E]`} title="JavaScript" />
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaCss3Alt className={`${baseIconClass} text-[#1572B6]`} title="CSS3" aria-hidden />
           </div>
-          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
-          <FaReact className={`${baseIconClass} text-[#61DAFB]`} title="React" />
+
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaJsSquare className={`${baseIconClass} text-[#F7DF1E]`} title="JavaScript" aria-hidden />
           </div>
-          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
-          <SiMongodb className={`${baseIconClass} text-[#47A248]`} title="MongoDB" />
+
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaReact className={`${baseIconClass} text-[#61DAFB]`} title="React" aria-hidden />
           </div>
-          <div className="border-2 rounded-2xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none ">
-          <FaGitAlt className={`${baseIconClass} text-[#F05032]`} title="Git" />
+
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <SiMongodb className={`${baseIconClass} text-[#47A248]`} title="MongoDB" aria-hidden />
           </div>
-          <div className="border-2 rounded-xl shadow-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center border-none">
-          <FaGithub className={`${baseIconClass} text-[#181717]`} title="GitHub" />
+
+          <div className="rounded-2xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaGitAlt className={`${baseIconClass} text-[#F05032]`} title="Git" aria-hidden />
+          </div>
+
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            <FaGithub className={`${baseIconClass} text-[#181717]`} title="GitHub" aria-hidden />
           </div>
         </div>
 
@@ -48,7 +55,7 @@ function Skills() {
           Soft-Skills
         </h2>
 
-        <div>
+        <div className="max-w-3xl mx-auto space-y-4">
           <AccordionCard
             titulo="Trabalho em Equipe"
             conteudo="Sei trabalhar em equipe e colaborar com colegas, ouvir opiniões diferentes e trabalhar em conjunto para atingir objetivos comuns."
