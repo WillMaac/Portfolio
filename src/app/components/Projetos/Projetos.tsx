@@ -12,7 +12,7 @@ export default function Projects() {
 
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-center w-full max-w-7xl">
         {/* CARD MAIOR À ESQUERDA - isLarge é true, com links nos botões */}
-        <div className="flex-1">
+        <div className="flex-1 transition duration-300 ease-in-out hover:scale-105 shadow-md shadow-[#06eb24] rounded-xl">
           <CardProjetos
             titulo="Arquitetura"
             image={Projeto1}
@@ -48,13 +48,15 @@ export default function Projects() {
           />
 
           {/* Card com botões sem linkPrincipal */}
+          
+
           <CardProjetos
-            titulo="Landing Page"
-            image={Projeto2}
+            titulo="Barbearia"
+            image={"/Elite.png"}
             btn="Código"
             btn2="Preview"
-            link1="https://github.com/WillMaac/landing-page-blue"
-            link2="https://landing-page-blue-gamma.vercel.app/"
+            link1="https://github.com/WillMaac/Barbearia/tree/main"
+            link2="https://barbearia-opal-eta.vercel.app/"
           />
         </div>
       </div>

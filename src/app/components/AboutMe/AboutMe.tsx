@@ -32,6 +32,7 @@ export default function AboutMe() {
             titulo="Currículo"
             descricao="Apresento meus conhecimentos adquiridos, formações e experiências práticas."
             btn="Baixar CV"
+            downloadLink="/cv.pdf"
           />
           <Card
             titulo="Certificados"

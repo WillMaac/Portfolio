@@ -8,7 +8,11 @@ export default function Footer() {
       </p>
 
       <div className="flex flex-col gap-4 w-full max-w-md mb-8">
-        <a href="https://www.linkedin.com/in/anderson-de-jesus-480b2a309/" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition">
+        <a href="https://www.linkedin.com/in/anderson-de-jesus-480b2a309/" 
+        className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition"
+         target="_blank" 
+          rel="noopener noreferrer"
+        >
           <div className="flex items-center gap-2">
             <span>🔗</span>
             <span className="font-medium">Linkedin</span>
@@ -22,14 +26,20 @@ export default function Footer() {
           </div>
           <span className="text-blue-800 text-lg">↗</span>
         </a>
-        <a href="https://github.com/WillMaac" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition">
+        <a href="https://github.com/WillMaac" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition"
+         target="_blank" 
+          rel="noopener noreferrer"
+        >
           <div className="flex items-center gap-2">
             <span>💻</span>
             <span className="font-medium">GitHub</span>
           </div>
           <span className="text-blue-800 text-lg">↗</span>
         </a>
-        <a href="mailto:andersonwj9@gmail.com" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition">
+        <a href="mailto:andersonwj9@gmail.com" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition"
+         target="_blank" 
+          rel="noopener noreferrer"
+        >
           <div className="flex items-center gap-2">
             <span>✉️</span>
             <span className="font-medium">Andersonwj9@gmail.com</span>
