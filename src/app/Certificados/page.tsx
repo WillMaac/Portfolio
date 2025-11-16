@@ -33,11 +33,10 @@ export default function CertificadosPage() {
           image="/Git.png"
           descrition="Este treinamento focado me equipou com os conhecimentos essenciais sobre o sistema de controle de versão mais utilizado no mercado, fundamental para a gestão eficiente de código em projetos individuais e, principalmente, colaborativos."
         />
-
         <Cards
-          nome="Ri Happy - Front-end do Zero"
-          image="/Front.png"
-          descrition="Este programa intensivo me proporcionou uma base sólida e as habilidades essenciais para o desenvolvimento front-end, cobrindo desde os fundamentos teóricos até a aplicação prática na criação de interfaces de usuário responsivas e modernas."
+          nome="JavaScript e TypeScript do básico ao avançado"
+          image="/javaScript.jpg"
+          descrition="Este curso me proporcionou sólida proficiência em JavaScript (ES6+) e TypeScript, com foco em desenvolvimento Front-end utilizando React (Hooks/Redux) para criar SPAs escaláveis. Possuo base Full Stack (Node.js, Express, NoSQL e Design Patterns).."
         />
       </div>
       
