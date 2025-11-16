@@ -32,8 +32,8 @@ export default function Projects() {
             image={Projeto2}
             btn="Código"
             btn2="Preview"
-            link1="https://github.com/WillMaac/Landing-page-do-Spider-Man"
-            link2="https://landing-page-do-spider-man-zeta.vercel.app/"
+            link1="https://github.com/WillMaac/Projeto-Spider-man-multiverses"
+            link2="https://willmaac.github.io/Projeto-Spider-man-multiverses/"
           />
 
           {/* Card com linkPrincipal (clicável por inteiro) */}
@@ -42,8 +42,7 @@ export default function Projects() {
             image="/t.png"
             btn="Código"
             btn2="Preview"
-            linkPrincipal="https://cl-nica-odontol-gica-h22i.vercel.app/"
-            link1="https://github.com/WillMaac/clinica-odontologica"
+            link1="https://github.com/WillMaac/Cl-nica-Odontol-gica"
             link2="https://cl-nica-odontol-gica-h22i.vercel.app/"
           />
 
