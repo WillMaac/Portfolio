@@ -1,3 +1,4 @@
+"use client";
 import { Card } from "../Card/Card";
 
 export default function AboutMe() {
@@ -36,16 +37,19 @@ export default function AboutMe() {
           />
           <Card
             titulo="Certificados"
-            descricao="Certificados de plataformas como Alura, FIAP, Udemy, etc."
+            descricao="Certificados de plataformas como Rocketseat, Dio, Udemy, etc."
             btn="Ver Certificados"
+            link="/Certificados"
           />
           <Card
             titulo="Experiência"
             descricao="Experiência prática com empresas reais e soluções tecnológicas."
             btn="Ver Experiências"
+            link="/Experiencia"
           />
         </div>
       </div>
+      
     </section>
   );
 }

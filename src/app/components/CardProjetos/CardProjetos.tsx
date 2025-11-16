@@ -11,13 +11,11 @@ type Props = {
   isLarge?: boolean;
   link1?: string;
   link2?: string;
-  linkPrincipal?: string;
 };
+
+// Verifica se o link é externo
 const isExternal = (href: string | undefined) => {
-  if (href) {
-    return href.startsWith('http') || href.startsWith('https');
-  }
-  return false;
+  return href?.startsWith("http") || href?.startsWith("https");
 };
 
 export const CardProjetos: React.FC<Props> = ({
@@ -30,13 +28,12 @@ export const CardProjetos: React.FC<Props> = ({
   isLarge = false,
   link1,
   link2,
-  linkPrincipal,
 }) => {
-  const cardContent = (
+  return (
     <article
-      className={`rounded-xl bg-white items-center justify-center h-[100px] flex flex-col cursor-pointer ${
-        isLarge ? "h-[520px] max-w-[400px] lg:max-w-[1500px]" : "h-[290px] transition duration-300 ease-in-out hover:scale-105 shadow-md shadow-[#06eb24]"
-      } overflow-hidden ${className}`}
+      className={`rounded-xl bg-white items-center justify-center flex flex-col cursor-pointer
+      ${isLarge ? "h-[520px] max-w-[1500px]" : "h-[290px] transition duration-300 hover:scale-105 shadow-md shadow-[#06eb24]"}
+      overflow-hidden ${className}`}
     >
       <Image
         src={image}
@@ -45,65 +42,59 @@ export const CardProjetos: React.FC<Props> = ({
         height={isLarge ? 300 : 150}
         className={`w-full ${isLarge ? "h-[300px]" : "h-[150px]"} rounded-xl`}
       />
+
       <div className="flex flex-col justify-center items-center p-4 flex-1">
         <h3 className="text-xl font-semibold mb-2 text-center">{titulo}</h3>
-        {descricao && <p className="text-sm text-gray-600 text-center">{descricao}</p>}
+        {descricao && (
+          <p className="text-sm text-gray-600 text-center">{descricao}</p>
+        )}
+
         <div className="flex gap-4 mt-4">
-          {/* BOTÃO 1 - Renderiza apenas se 'link1' for fornecido */}
+
+          {/* BOTÃO 1 */}
           {link1 && (
             isExternal(link1) ? (
-              <a 
+              <a
                 href={link1}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
               >
                 {btn}
               </a>
             ) : (
-              <Link href={link1} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400">
+              <Link
+                href={link1}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
+              >
                 {btn}
               </Link>
             )
           )}
 
-          {/* BOTÃO 2 - Renderiza apenas se 'link2' for fornecido */}
+          {/* BOTÃO 2 */}
           {link2 && (
             isExternal(link2) ? (
-              <a 
+              <a
                 href={link2}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
               >
                 {btn2}
               </a>
             ) : (
-              <Link href={link2} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400">
+              <Link
+                href={link2}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-green-400"
+              >
                 {btn2}
               </Link>
             )
           )}
+
         </div>
       </div>
     </article>
-  );
-
-  return (
-    <>
-      {/* Se 'linkPrincipal' for fornecido, ele envolve todo o card em um link. */}
-      {linkPrincipal ? (
-        isExternal(linkPrincipal) ? (
-          <a href={linkPrincipal} target="_blank" rel="noopener noreferrer">
-            {cardContent}
-          </a>
-        ) : (
-          <Link href={linkPrincipal}>{cardContent}</Link>
-        )
-      ) : (
-    
-        <>{cardContent}</>
-      )}
-    </>
   );
 };

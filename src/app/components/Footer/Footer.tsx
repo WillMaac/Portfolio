@@ -19,7 +19,10 @@ export default function Footer() {
           </div>
           <span className="text-blue-700 text-lg">↗</span>
         </a>
-        <a href="" className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition">
+        <a href="https://www.instagram.com/annderson15/" 
+        target="_blank" 
+          rel="noopener noreferrer"
+        className="flex items-center justify-between bg-white rounded-xl shadow-md px-6 py-3 hover:bg-green-500 transition">
           <div className="flex items-center gap-2">
             <span>📷</span>
             <span className="font-medium">Instagram</span>
