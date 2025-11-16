@@ -35,7 +35,7 @@ export default function CertificadosPage() {
         />
         <Cards
           nome="JavaScript e TypeScript do básico ao avançado"
-          image="/javaScript.jpg"
+          image="/javascript.jpg"
           descrition="Este curso me proporcionou sólida proficiência em JavaScript (ES6+) e TypeScript, com foco em desenvolvimento Front-end utilizando React (Hooks/Redux) para criar SPAs escaláveis. Possuo base Full Stack (Node.js, Express, NoSQL e Design Patterns).."
         />
       </div>
