@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Card } from "../components/Card/Card"
 export default function experiencia  () {
     return(
-        <div>
+        <div className="flex flex-col items-center w-full">
 {/* Botão de voltar */}
       <Link
         href="/#sobre"
@@ -18,7 +18,7 @@ export default function experiencia  () {
 
 
             <h1 className="font-inter text-center text-2xl">Experiências</h1>
-            <div className="flex flex-wrap justify-center items-center gap-20 w-full min-h-screen">
+            <div className="flex flex-wrap justify-center items-center gap-20 w-full min-h-screen mt-20">
             <Card
             titulo="Front-end"
             descricao="trabalhei como dev front"
