@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+MEU PORTFÓLIO 👩‍💻
 
-## Getting Started
+Um portfólio é mais do que um simples site: é a sua identidade profissional, a forma como você apresenta suas habilidades e como comunica o valor que pode oferecer. Pensando nisso, desenvolvi um portfólio com um design baseado em tons de preto e branco, com detalhes em verde que aparecem em elementos como bordas e destaques, criando um visual moderno, limpo e marcante que harmoniza com minha foto profissionai de fundo. O portfólio conta com seções dedicadas a:
 
-First, run the development server:
+Sobre mim
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Experiência profissional
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Currículo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Soft-Skills
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Projetos
 
-## Learn More
+Contato
 
-To learn more about Next.js, take a look at the following resources:
+Cada card tem uma funcionalidade que ao ser clicado redirecionado para uma página:
+Página de certificados
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Experiência Profissional
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Download para currículo
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🛠️Tecnologias utilizadas:
+TypeScript
+Tailwind CSS
+Next.js
+
+Destaques: Responsividade completa, garantindo uma experiência ideal em todas as telas (desktop, mobile e mais!).
+
+Este foi um projeto que desenvolvi, superei desafios técnicos e criativos para construir algo que representasse quem sou, minha trajetória e tudo que posso oferecer ao mercado.
+
+Confira o resultado aqui: https://portfolio-psi-seven-cxv8rjl4ks.vercel.app/#inicio
