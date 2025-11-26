@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Cards } from "./Cards/cards";
+import { Cards } from "./Cards/Cards";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function CertificadosPage() {
@@ -17,10 +17,10 @@ export default function CertificadosPage() {
         
       </Link>
 
-      {/* Título */}
+    
       <h1 className="text-2xl mt-5 font-semibold">Certificados</h1>
 
-      {/* Grid de Cards */}
+      
       <div className="flex flex-wrap justify-center gap-20 w-full px-5 min-h-screen items-center">
         <Cards
           nome="Ri Happy - Front-end do Zero"
