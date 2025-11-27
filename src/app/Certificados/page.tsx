@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Cards } from "./Cards/Cards";
+import  Cards  from "./Cards/Cards";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function CertificadosPage() {
