@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
-import  Cards from "./Card/Cards"
+import Cards from "../Experiencia/Card/Cards";
+
+
 
 export default function Experiencia() {
   return (
