@@ -9,7 +9,7 @@ type Props = {
   link?: string;
 };
 
-export default function Cards({
+export default function cards({
   titulo,
   descricao,
   btn,
