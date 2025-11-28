@@ -10,7 +10,7 @@ type Props = {
 
 export const Card: React.FC<Props> = ({ titulo, descricao, btn, downloadLink, onClick, link }) => {
   return (
-    <article className="border-2  rounded-xl shadow-xl shadow-[#00000065] px-6 py-3 transition text-center duration-300 hover:scale-105 max-w-[25em] border-none h-[20em]">
+    <article className="border-2  rounded-xl shadow-2xl shadow-[#00000065] px-6 py-3 transition text-center duration-300 hover:scale-105 max-w-[25em] border-none h-[20em]">
       <h3 className="text-xl font-inter">{titulo}</h3>
       <p className="text-[20px] font-poppins text-2xl">{descricao}</p>
 

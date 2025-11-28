@@ -4,24 +4,23 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 import Cards from "./card/cards";
 
-
-
-
 export default function Experiencia() {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center w-full px-4">
 
       {/* Botão de voltar */}
       <Link
         href="/#sobre"
-        className="flex items-center gap-2 self-start ml-5 mt-5 hover:opacity-70 transition"
+        className="flex items-center gap-2 self-start mt-5 hover:opacity-70 transition"
       >
         <FaArrowLeft className="w-5 h-5" />
       </Link>
 
-      <h1 className="font-inter text-center text-2xl">Experiências</h1>
+      <h1 className="font-inter text-center text-xl sm:text-2xl mt-5">
+        Experiências
+      </h1>
 
-      <div className="flex flex-wrap justify-center items-center gap-20 w-full min-h-screen mt-20">
+      <div className="flex flex-wrap justify-center items-start gap-10 sm:gap-16 md:gap-20 w-full mt-10 mb-10">
 
         <Cards
           titulo="Back-end | Java"

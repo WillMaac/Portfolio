@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default function CertificadosPage() {
   return (
-    <div className="flex flex-col items-center w-full">
+    <div className="flex flex-col items-center ">
 
       {/* Botão de voltar */}
       <Link
@@ -27,7 +27,6 @@ export default function CertificadosPage() {
           image="/Front.png"
           descrition="Este programa intensivo me proporcionou uma base sólida e as habilidades essenciais para o desenvolvimento front-end, cobrindo desde os fundamentos teóricos até a aplicação prática na criação de interfaces de usuário responsivas e modernas."
         />
-
         <Cards
           nome="Versionamento de Código com Git e GitHub"
           image="/Git.png"
