@@ -9,7 +9,7 @@ type AvatarProps = {
 };
 
 export const Avatar: React.FC<AvatarProps> = ({
-  src = "/perfil0.jpeg",
+  src = "/perfil.jpeg",
   alt = "Foto de perfil",
   size = 260,
 }) => {
