@@ -9,6 +9,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+
 import AccordionCard from "../AccordionCard/AccordionCard";
 
 const baseIconClass = "text-4xl sm:text-5xl";
@@ -35,6 +37,11 @@ function Skills() {
           </div>
 
           <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
+            
+            <SiTypescript className={`${baseIconClass} text-[#181717]`} title="TypeScript" color="#3178C6" size={40} aria-hidden />
+            </div>
+
+          <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
             <FaReact className={`${baseIconClass} text-[#61DAFB]`} title="React" aria-hidden />
           </div>
 
@@ -48,6 +55,7 @@ function Skills() {
 
           <div className="rounded-xl px-6 py-3 transition text-center duration-300 hover:scale-105 flex justify-center shadow-2xl">
             <FaGithub className={`${baseIconClass} text-[#181717]`} title="GitHub" aria-hidden />
+          
           </div>
         </div>
 
@@ -58,19 +66,19 @@ function Skills() {
         <div className="max-w-3xl mx-auto space-y-4">
           <AccordionCard
             titulo="Trabalho em Equipe"
-            conteudo="Sei trabalhar em equipe e colaborar com colegas, ouvir opiniões diferentes e trabalhar em conjunto para atingir objetivos comuns."
+            conteudo="Possuo facilidade para atuar em equipe, colaborando de forma construtiva com colegas, ouvindo diferentes pontos de vista e contribuindo para o alcance de objetivos em comum."
           />
           <AccordionCard
             titulo="Comunicação Clara"
-            conteudo="Sei expressar minhas ideias de forma objetiva, tanto na fala quanto na escrita, facilitando o entendimento e evitando mal-entendidos."
+            conteudo="Sou capaz de expressar ideias de maneira clara e objetiva, tanto na comunicação verbal quanto escrita, garantindo compreensão eficaz."
           />
           <AccordionCard
             titulo="Pensamento Crítico"
-            conteudo="Sei analisar situações de forma lógica e racional, questionando suposições e avaliando alternativas."
+            conteudo="Tenho habilidade para analisar situações de forma lógica e analítica, questionando premissas, avaliando alternativas e tomando decisões fundamentadas."
           />
           <AccordionCard
             titulo="Criatividade"
-            conteudo="Como desenvolvedor front-end, a criatividade é essencial, desde transformar ideias em interfaces cativantes até resolver desafios de usabilidade com soluções elegantes."
+            conteudo="Ao longo da minha trajetória como desenvolvedor front-end, desenvolvi a criatividade como uma competência essencial, utilizando-a dentro e fora do código para resolver desafios, fortalecer o trabalho em equipe e atender às demandas de clientes."
           />
           <AccordionCard
             titulo="Gestão de Tempo e Prioridades"

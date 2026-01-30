@@ -3,13 +3,13 @@ import Image, { type StaticImageData } from "next/image";
 import "../Avatar/animations.css";
 
 type AvatarProps = {
-  src?: string | StaticImageData; // aceita "/avatar.png" (public) ou import foto from '...'
+  src?: string | StaticImageData;
   alt?: string;
   size?: number;
 };
 
 export const Avatar: React.FC<AvatarProps> = ({
-  src = "/avatar.png",
+  src = "/perfil0.jpeg",
   alt = "Foto de perfil",
   size = 260,
 }) => {

@@ -28,7 +28,7 @@ export default function AboutMe() {
         pronto para contribuir com a sua equipa ou dar vida ao seu projeto.
       </p>
       <div>
-        <div className="flex gap-5 mt-10 flex-wrap justify-center">
+        <div className="flex gap-30 mt-20 flex-wrap justify-center">
           <Card
             titulo="Currículo"
             descricao="Apresento meus conhecimentos adquiridos, formações e experiências práticas."

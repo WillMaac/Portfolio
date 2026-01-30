@@ -32,7 +32,7 @@ export const CardProjetos: React.FC<Props> = ({
   return (
     <article
       className={`rounded-xl bg-white items-center justify-center flex flex-col cursor-pointer
-      ${isLarge ? "h-[520px] max-w-[1500px]" : "h-[290px] transition duration-300 hover:scale-105 shadow-md shadow-[#06eb24]"}
+      ${isLarge ? "h-[520px] max-w-[1500px]" : "h-[290px] transition duration-300 hover:scale-105  shadow-[5px_5px_5px_#050967c2]"}
       overflow-hidden ${className}`}
     >
       <Image
@@ -51,7 +51,7 @@ export const CardProjetos: React.FC<Props> = ({
 
         <div className="flex gap-4 mt-4">
 
-          {/* BOTÃO 1 */}
+          
           {link1 && (
             isExternal(link1) ? (
               <a
@@ -72,7 +72,7 @@ export const CardProjetos: React.FC<Props> = ({
             )
           )}
 
-          {/* BOTÃO 2 */}
+          
           {link2 && (
             isExternal(link2) ? (
               <a

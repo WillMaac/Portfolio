@@ -12,7 +12,7 @@ export default function Projects() {
 
       <div className="flex flex-col lg:flex-row gap-10 items-start justify-center w-full max-w-7xl">
         {/* CARD MAIOR À ESQUERDA - isLarge é true, com links nos botões */}
-        <div className="flex-1 transition duration-300 ease-in-out hover:scale-105 shadow-md shadow-[#06eb24] rounded-xl">
+        <div className="flex-1 transition duration-300 ease-in-out hover:scale-105 shadow-[5px_5px_5px_#050967c2] rounded-xl">
           <CardProjetos
             titulo="Arquitetura"
             image={Projeto1}

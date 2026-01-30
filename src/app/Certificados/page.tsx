@@ -8,7 +8,7 @@ export default function CertificadosPage() {
   return (
     <div className="flex flex-col items-center ">
 
-      {/* Botão de voltar */}
+      
       <Link
         href="/#sobre"
         className="flex items-center gap-2 self-start ml-5 mt-5 hover:opacity-70 transition"
@@ -36,6 +36,11 @@ export default function CertificadosPage() {
           nome="JavaScript e TypeScript do básico ao avançado"
           image="/javascript.jpg"
           descrition="Este curso me proporcionou sólida proficiência em JavaScript (ES6+) e TypeScript, com foco em desenvolvimento Front-end utilizando React (Hooks/Redux) para criar SPAs escaláveis. Possuo base Full Stack (Node.js, Express, NoSQL e Design Patterns).."
+        />
+        <Cards
+        nome="JavaScript"
+        image="/javascript.png"
+        descrition="Este curso me proporcionou sólida proficiência em JavaScript (ES6+), com foco nos fundamentos da linguagem, lógica de programação, manipulação de dados e boas práticas de desenvolvimento. A formação estabelece uma base consistente para o desenvolvimento Front-end moderno, bem como para a evolução em frameworks, bibliotecas e tecnologias do ecossistema JavaScript."
         />
       </div>
       
