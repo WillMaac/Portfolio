@@ -14,7 +14,7 @@ const AccordionCard: FC<AccordionCardProps> = ({ titulo, conteudo }) => {
   const toggleAccordion = () => setIsOpen(!isOpen);
 
   return (
-    <div className="max-w-md mx-auto my-4 overflow-hidden rounded-3xl border border-none shadow-[5px_5px_5px_#031cfcca]">
+    <div className="max-w-md mx-auto my-4 overflow-hidden rounded-3xl border border-none shadow-[1px_10px_1px_#050cd1]">
       <button
         className="flex w-full items-center justify-between p-4 text-left font-semibold text-white text-xl bg-[#45f045] transition-all duration-300 ease-in-out shadow-sm focus:outline-none focus:ring-2 cursor-pointer hover:bg-[#131724] rounded-3xl"
         onClick={toggleAccordion}
