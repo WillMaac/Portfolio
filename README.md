@@ -1,35 +1,69 @@
-MEU PORTFÓLIO 👩‍💻
+# 🌟 Portfólio Profissional – Desenvolvedor Front-End
 
-Um portfólio é mais do que um simples site: é a sua identidade profissional, a forma como você apresenta suas habilidades e como comunica o valor que pode oferecer. Pensando nisso, desenvolvi um portfólio com um design baseado em tons de preto e branco, com detalhes em verde que aparecem em elementos como bordas e destaques, criando um visual moderno, limpo e marcante que harmoniza com minha foto profissionai de fundo. O portfólio conta com seções dedicadas a:
+<p align="center">
+  <a href="https://portfolio-psi-seven-cxv8rjl4ks.vercel.app/">
+    <img src="https://img.shields.io/badge/VERCEL-DEPLOYED-000?style=for-the-badge&logo=vercel" alt="Deploy">
+  </a>
+  <img src="https://img.shields.io/badge/Next.js-13-000?style=for-the-badge&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS">
+</p>
 
-Sobre mim
+## 🖥️ Preview do Projeto
 
-Experiência profissional
-
-Currículo
-
-Soft-Skills
-
-Projetos
-
-Contato
-
-Cada card tem uma funcionalidade que ao ser clicado redirecionado para uma página:
-Página de certificados
-
-Experiência Profissional
-
-Download para currículo
+<p align="center">
+  <img src="public/home.png" width="" alt="Imagem do projeto"
+  style="border-radius: 20px;" 
+  />
+</p>
 
 
 
-🛠️Tecnologias utilizadas:
-TypeScript
-Tailwind CSS
-Next.js
+## 🚀 Deploy
 
-Destaques: Responsividade completa, garantindo uma experiência ideal em todas as telas (desktop, mobile e mais!).
+ https://portfolio-psi-seven-cxv8rjl4ks.vercel.app/
 
-Este foi um projeto que desenvolvi, superei desafios técnicos e criativos para construir algo que representasse quem sou, minha trajetória e tudo que posso oferecer ao mercado.
+---
+<br>
 
-Confira o resultado aqui: https://portfolio-psi-seven-cxv8rjl4ks.vercel.app/#inicio
+## 📌 Sobre
+
+Este portfólio foi desenvolvido como uma vitrine profissional para apresentar:
+
+- Experiência profissional  
+- Projetos desenvolvidos  
+- Soft skills  
+- Certificações  
+- Contato direto  
+
+O design segue uma paleta minimalista em **preto e branco com destaques em verde e azul**, garantindo contraste elegante e identidade visual marcante.
+
+---
+
+## 🧠 Funcionalidades
+
+✔️ Navegação fluida  
+✔️ Cards interativos com redirecionamento  
+✔️ Página de certificados  
+✔️ Download de currículo em PDF  
+✔️ Layout 100% responsivo  
+✔️ Estrutura organizada e escalável  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js  
+- TypeScript  
+- Tailwind CSS  
+
+---
+
+## 📥 Como Executar Localmente
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar ambiente de desenvolvimento
+npm run dev

@@ -11,7 +11,7 @@ export const CTAButtons: React.FC = () => {
   };
 
   return (
-    <div className="flex gap-[30px] flex-wrap justify-center lg:justify-start lg:gap-[100px]">
+    <div className="flex gap-[30px] flex-wrap justify-between lg:justify-start lg:gap-[100px] mb-10 lg:mt-20">
       <button
         className="bg-green-400 hover:bg-[#232e53] text-white px-6 py-2 rounded-full font-semibold transition cursor-pointer duration-300 ease-in-out hover:scale-105"
         type="button"
@@ -21,12 +21,12 @@ export const CTAButtons: React.FC = () => {
       </button>
 
       <button
-        className="border border-gray-200 px-6 py-2 rounded-full bg-white  font-semibold transition cursor-pointer duration-300 ease-in-out hover:scale-105 hover:bg-[#48b948]"
+        className="border border-gray-200 px-2 py- rounded-full bg-white  font-semibold transition cursor-pointer duration-300 ease-in-out hover:scale-105 hover:bg-[#48b948]"
         type="button"
         aria-label="Ir para contatos"
         onClick={() => scrollToSection("contatos")}
       >
-        Contatos
+      Entre em Contato
       </button>
     </div>
   );
